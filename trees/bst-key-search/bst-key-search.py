@@ -43,5 +43,25 @@ def inOrderTraversal(node):
     return inOrderTraversal(node.left) + [node.data] + inOrderTraversal(node.right)
 
 
-def keyExist(key, node):
-    pass
+# BSTにkeyが存在するのか確認する
+def keyExist(key, bst):
+    # ベースケース兼エッジケース（葉ノードまで到達してもkeyがない場合）
+    if bst is None:
+        return False
+    # 合致する場合のベースケース（その時点でTrueを返す）
+    if bst.data == key:
+        return True
+
+    # 再帰的処理・left
+    if key < bst.data:
+        return keyExist(key, bst.left)
+    # それ以外・right
+    # ＝になる値が重複するようだが、ベースケースに流すために必要なこと
+    return keyExist(key, bst.right)
+
+# テストケース
+balancedBST = sortedArrayToBST([1,2,3,4,5,6,7,8,9,10,11])
+print(keyExist(6, balancedBST))
+print(keyExist(10, balancedBST))
+print(keyExist(45, balancedBST))
+
