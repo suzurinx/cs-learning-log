@@ -34,6 +34,7 @@ def sortedArrayToSBTHelper(arr, start, end):
     # 根ノード
     return BinaryTree(arr[mid], left, right)
 
+
 # BSTにkeyが含まれているかイテレーターを利用して探索する
 # 再帰ではなく、ループでBSTを探索する実装
 # True,Falseを返す
@@ -43,8 +44,8 @@ def keyExist(key, BST):
     iterator = BST
     while iterator:
         if iterator.data == key:
-            # 値を返すことが目的のため、returnで即座に終了する
-            # 状態の保持や中間処理が目的ならbreakも検討するが、本関数では不要
+            # 値を返すことで関数処理を終了するため、ループ中でも break は利用しない
+            # break はループ処理の中で状態を変えてから処理を続けたい時に利用する
             return True
         if key < iterator.data:
             iterator = iterator.left
@@ -52,3 +53,9 @@ def keyExist(key, BST):
             iterator = iterator.right
 
     return False
+
+
+balancedBST = sortedArrayToSBT([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11])
+print(keyExist(6, balancedBST))
+print(keyExist(10, balancedBST))
+print(keyExist(45, balancedBST))
