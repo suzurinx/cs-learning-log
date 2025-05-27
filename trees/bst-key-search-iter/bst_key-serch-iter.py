@@ -42,11 +42,13 @@ def keyExist(key, BST):
     # (dataにも参照先にもアクセス可能)
     iterator = BST
     while iterator:
-        if iterator == key.data:
+        if iterator.data == key:
             # 値を返すことが目的のため、returnで即座に終了する
             # 状態の保持や中間処理が目的ならbreakも検討するが、本関数では不要
             return True
-        if iterator < key:
+        if key < iterator.data:
             iterator = iterator.left
         else:
             iterator = iterator.right
+
+    return False
