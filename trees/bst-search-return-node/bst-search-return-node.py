@@ -78,6 +78,11 @@ def printTree(node):
         if current:
             queue.append(current.left)
             queue.append(current.right)
+
+    # 葉ノードについたNoneを削除する
+    while result and result[-1] is None:
+        result.pop()
+
     return result
 
 
