@@ -8,11 +8,13 @@ level-orderで構築した二分木のルートからkeyを見つける
 - キューを利用して走査する
 
 ## テストケース
+```
 exists(toBinaryTree([0, -10, 5, None, -3, None, 9]), 5)
 exists(toBinaryTree([0, -10, 5, None, -3, None, 18]), 20)
 exists(toBinaryTree([5, 3, 6, 2, 4, None, 7]), 3)
 exists(toBinaryTree([5, 3, 6, 2, 4, None, 7]), 5)
 exists(toBinaryTree([5, 3, 6, 2, 4, None, 7]), 15)
+```
 
 ## 出力
 True, False
