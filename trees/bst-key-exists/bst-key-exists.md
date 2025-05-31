@@ -7,7 +7,6 @@ level-orderで構築した二分木のルートからkeyを見つける
 - level-oderを利用して二分木を作成
 - キューを利用して走査する
 
-
 ## テストケース
 exists(toBinaryTree([0, -10, 5, None, -3, None, 9]), 5)
 exists(toBinaryTree([0, -10, 5, None, -3, None, 18]), 20)
