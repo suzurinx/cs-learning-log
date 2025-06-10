@@ -1,4 +1,4 @@
-# bst-key-exists 問題の解法メモ
+# binarytree-inorder-traversal 問題の解法メモ
 
 ## 内容
 
