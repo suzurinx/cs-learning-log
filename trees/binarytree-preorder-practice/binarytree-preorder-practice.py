@@ -35,12 +35,20 @@ def preOrderTraversal(root):
 
 
 # 前順走査（preOrder）でプリントする関数
+#def preOrderTraversalHelper(root):
+#    print(root.data, end=" ")
+#    if root.left is not None:
+#        preOrderTraversalHelper(root.left) # ←return すると処理が止まるので書かない
+#    if root.right is not None:
+#        preOrderTraversalHelper(root.right) # ←return すると処理が止まるので書かない
+
+
+#リファクタ
 def preOrderTraversalHelper(root):
-    print(root.data, end=" ")
-    if root.left is not None:
-        preOrderTraversalHelper(root.left) # ←return すると処理が止まるので書かない
-    if root.right is not None:
-        preOrderTraversalHelper(root.right) # ←return すると処理が止まるので書かない
+    if root is not None:
+        print(root.data, end=" ")
+        preOrderTraversalHelper(root.left)
+        preOrderTraversalHelper(root.right)
 
 
 # test
