@@ -1,4 +1,4 @@
-# binarytree-preoder-travasal 問題の解法メモ
+# binarytree-postorder-travasal 問題の解法メモ
 
 ## 内容
 
