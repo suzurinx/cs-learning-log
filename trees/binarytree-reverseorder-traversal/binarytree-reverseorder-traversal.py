@@ -8,13 +8,13 @@ class BinaryTree:
         self.reverseOrderTraversal()
         print()
 
-    # 右 > 左 > ルート
+    # 右 > ルート > 左
     def reverseOrderTraversal(self):
         if self.right:
             self.right.reverseOrderTraversal()
+        print(str(self.data), end=" ")
         if self.left:
             self.left.reverseOrderTraversal()
-        print(str(self.data), end=" ")
 
 class BinarySearchTree:
     def __init__(self, arrList):
