@@ -17,5 +17,5 @@
 
 ---
 
-📘 Started: 2025-05
+📘 Started: 2025-05  
 🎯 Current goal: Binary Search Tree
