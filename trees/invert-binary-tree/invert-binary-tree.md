@@ -1,4 +1,4 @@
-# bst-key-exists 問題の解法メモ
+# invert-binary-tree 問題の解法メモ
 
 ## 内容
 - 二分木（BinaryTree）を左右反転（invert）する関数 invertTree を実装する問題
