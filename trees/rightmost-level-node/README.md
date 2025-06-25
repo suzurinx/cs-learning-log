@@ -43,4 +43,4 @@ print(rightLevelNode(toBinaryTree([1,2,3,4,5,6,7,8,null,9,10,11,null,null,12,nul
 - queue の中身に対して「どの時点で何が入っているか」を意識すると、設計理解が深まる。
 - toBinaryTree() が何をしているか不明な場合は、ノードを明示的に BinaryTree で構築することで構造を追いやすい。
 ## 解いた日
-（例：2025-06-23）
+2025-06-24
